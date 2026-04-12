@@ -44,6 +44,9 @@ models:
     intermediate:
       +materialized: view
       +schema: silver
+    marts:
+      +materialized: table
+      +schema: gold
 
 snapshots:
   ecommerce_data_engineering:
