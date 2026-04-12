@@ -42,6 +42,10 @@ models:
     example:
       +materialized: view
 
+snapshots:
+  ecommerce_data_engineering:
+    +schema: gold
+
 seeds:
   ecommerce_data_engineering:
     +schema: bronze
