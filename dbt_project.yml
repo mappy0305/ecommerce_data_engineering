@@ -38,9 +38,10 @@ vars:
 # files using the `{{ config(...) }}` macro.
 models:
   ecommerce_data_engineering:
-    # Config indicated by + and applies to all files under models/example/
-    example:
+  shopflow_analytics:
+    staging:
       +materialized: view
+      +schema: silver
 
 snapshots:
   ecommerce_data_engineering:
