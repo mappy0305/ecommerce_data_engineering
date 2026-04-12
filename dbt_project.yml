@@ -38,8 +38,10 @@ vars:
 # files using the `{{ config(...) }}` macro.
 models:
   ecommerce_data_engineering:
-  shopflow_analytics:
     staging:
+      +materialized: view
+      +schema: silver
+    intermediate:
       +materialized: view
       +schema: silver
 
