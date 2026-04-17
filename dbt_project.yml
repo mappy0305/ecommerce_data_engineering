@@ -39,21 +39,26 @@ vars:
 models:
   ecommerce_data_engineering:
     staging:
+      +catelog: workspace
       +materialized: view
       +schema: silver
     intermediate:
+      +catelog: workspace
       +materialized: view
       +schema: silver
     marts:
+      +catelog: workspace
       +materialized: table
       +schema: gold
 
 snapshots:
   ecommerce_data_engineering:
+    +catelog: workspace
     +schema: gold
 
 seeds:
   ecommerce_data_engineering:
+    +catelog: workspace 
     +schema: bronze
     raw_customers:
       +column_types:
