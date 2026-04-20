@@ -14,6 +14,9 @@ variables:
   catalog:
     description: Unity catalog name for dbt
     default: workspace
+  trigger_pause_status:
+    description: Whether the schedule is active or paused
+    default: PAUSED   # safe fallback
 
 include:
   - resources/dbt_ecommerce_data_engineering.yml
@@ -28,6 +31,8 @@ targets:
     variables:
       warehouse_id: ${var.warehouse_id_dev}
       catalog: workspace
+      trigger_pause_status: PAUSED   # deployed but won't fire automatically in dev
+
 
   prod:
     mode: production
@@ -37,3 +42,4 @@ targets:
     variables:
       warehouse_id: ${var.warehouse_id_prod}
       catalog: workspace
+      trigger_pause_status: UNPAUSED  # runs daily automatically in prod
