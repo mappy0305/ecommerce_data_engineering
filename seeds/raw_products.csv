@@ -1,11 +1,21 @@
 product_id,product_name,category,price
 prod_001,Wireless Headphones,Electronics,49.99
-prod_002,Bluetooth Speaker,Electronics,89.50
-prod_003,USB-C Hub,Electronics,78.00
+prod_002,Bluetooth Speaker,Electronics,89.5
+prod_003,USB-C Hub,Electronics,78.0
 prod_004,Mechanical Keyboard,Electronics,84.03
-prod_005,Desk Lamp,Home,67.99
-prod_006,Notebook Set,Office,45.00
-prod_007,Monitor Stand,Electronics,124.50
-prod_008,Desk Organizer,Office,30.76
-prod_009,Ergonomic Mouse,Electronics,59.99
-prod_010,Webcam HD,Electronics,89.00
+prod_005,Webcam HD,Electronics,89.0
+prod_006,Monitor Stand,Electronics,124.5
+prod_007,Ergonomic Mouse,Electronics,59.99
+prod_008,E-book Bundle,Digital Products,19.99
+prod_009,Online Course Pack,Digital Products,49.99
+prod_010,Music Stream Pass,Digital Products,9.99
+prod_011,Desk Lamp,Lifestyle,67.99
+prod_012,Yoga Mat,Lifestyle,45.0
+prod_013,Water Bottle,Lifestyle,24.99
+prod_014,Notebook Set,Lifestyle,15.0
+prod_015,Desk Organizer,Lifestyle,30.76
+prod_016,Running Shoes,Fashion,94.0
+prod_017,Leather Wallet,Fashion,39.99
+prod_018,Sunglasses,Fashion,55.0
+prod_019,Shampoo Pack,FMCG,12.5
+prod_020,Vitamin C Tablets,FMCG,18.0

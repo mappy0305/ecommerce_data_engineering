@@ -67,3 +67,27 @@ models:
         description: "Product category"
       - name: price
         description: "Current product price"
+
+  - name: stg_customers
+    description: "Staging view of customers. One row per customer."
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+        tests: [unique, not_null]
+      - name: first_name
+        description: "Customer first name"
+        tests: [not_null]
+      - name: last_name
+        description: "Customer last name"
+        tests: [not_null]
+      - name: email
+        description: "Customer email address (lowercased)"
+        tests: [unique, not_null]
+      - name: phone_number
+        description: "Masked customer phone number"
+      - name: country
+        description: "Customer country code (uppercased)"
+        tests: [not_null]
+      - name: created_at
+        description: "Timestamp when the customer record was created"
+        tests: [not_null]
