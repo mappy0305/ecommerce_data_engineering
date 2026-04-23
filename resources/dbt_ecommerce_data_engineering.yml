@@ -8,10 +8,7 @@ resources:
             project_directory: ${workspace.root_path}/files/
             commands:
               - dbt deps
-              - dbt seed
-              - dbt snapshot
-              - dbt run
-              - dbt test
+              - dbt build
             warehouse_id: ${var.warehouse_id}
             catalog: ${var.catalog}
             source: WORKSPACE
