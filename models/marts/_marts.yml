@@ -52,3 +52,9 @@ models:
         tests: [unique, not_null]
       - name: category
         tests: [not_null]
+  
+  - name: dim_customers
+    description: "Dimension table: one row per customer."
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]

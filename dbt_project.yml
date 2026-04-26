@@ -51,10 +51,13 @@ models:
       +materialized: table
       +schema: gold
 
+  elementary:
+    +schema: elementary
+
 snapshots:
   ecommerce_data_engineering:
     +catalog: workspace
-    +schema: gold
+    +schema: silver
 
 seeds:
   ecommerce_data_engineering:
