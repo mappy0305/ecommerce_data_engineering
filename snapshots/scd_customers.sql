@@ -1,4 +1,4 @@
--- Type 2 SCD: customers (from raw_customers)
+-- Type 2 SCD: customers (from stg_customers)
 {% snapshot scd_customers %}
 {{
     config(
